@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stryktipset</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div style="margin-bottom: 12px;">
+            <button id="europatipset" data-url="europatipset.html" disabled>Europatipset</button>
+            <button id="topptipset" data-url="topptipset.html" disabled>Topptipset</button>
+        </div>
+        <div id="roundInfo" class="table">Loading round data...</div>
+        <div class="table noBorder">
+            <div class="cell split">
+                <p>Half Hedges</p><div id="halfHedgesContainer"></div>
+            </div>
+        
+            <div class="cell split">
+                <p>Full Hedges</p><div id="fullHedgesContainer"></div>
+            </div>
+            <div class="cell split">
+                <p>Price</p>
+                <!-- Price is automatically updated here -->
+                <div id="priceDisplay">N/A</div>
+            </div>
+            <!-- This container holds the Calculate button -->
+            <div id="calcContainer" style="margin-bottom: 12px"></div>
+        </div>
+        
+        <div id="systemOutput"></div>
+      </div>
+      
+      
+      <script src="app.js"></script>
+      
+  <script src="app.js"></script>
+</body>
+</html>

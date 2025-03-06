@@ -1,0 +1,85 @@
+/* style.css */
+
+p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    background: #ffffff;
+    margin: 0;
+    padding: 12px;
+  }
+  
+  .container {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .table {
+    border-top: 1px solid rgba(0,0,0,0.15);
+    max-width: 600px;
+  }
+
+  .table.noBorder {
+    border-top: 0px solid rgba(0,0,0,0.15);
+  }
+
+  .cell {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding: 8px 0px;
+    width: 100%;
+  }
+
+  .cell.split {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cell.split p:first-child {
+    color: rgba(0,0,0,0.5)
+  }
+
+  #systemButtons {
+    border-top: 0px solid rgba(0,0,0,0.2);
+  }
+  
+  button {
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    margin-right: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.1s ease;
+    background: none;
+  }
+
+  button:hover {
+    background: rgba(0,0,0,0.08);
+  }
+
+  button.active {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    border: 1px solid rgba(0,0,0,0.15);
+  }
+
+  button:disabled:hover {
+    background: none;
+  }
+
+  #calcContainer {
+    width: 100%;
+    padding-top: 12px;
+    text-align: right;
+  }
+  
